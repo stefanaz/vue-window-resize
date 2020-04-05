@@ -1,10 +1,25 @@
 {
   "name": "vue-window-resize",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.5",
+  "private": false,
+  "author": {
+    "name": "Stefaniuk Nazar",
+    "email": "stefaniuk.nazar@gmail.com"
+  },
+  "repository": "https://github.com/stefanaz/vue-window-resize",
+  "bugs": "https://github.com/stefanaz/vue-window-resize/issues",
+  "license": "MIT",
+  "files": ["dist"],
+  "main": "dist/vue-window-resize.umd.js",
+  "module": "dist/vue-window-resize.esm.js",
+  "unpkg": "dist/vue-window-resize.min.js",
+  "browser": {
+    "./sfc": "src/components/WindowResize.vue"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name vue-window-resize ./src/components/WindowResize.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

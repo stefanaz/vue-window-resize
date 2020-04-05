@@ -1,18 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <WindowResize v-model="window"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WindowResize from './components/WindowResize.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    WindowResize
+  },
+  data() {
+    return {
+      window: {
+        width: 0,
+        height: 0,
+      }
+    }
+  },
 }
 </script>
 
