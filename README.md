@@ -1,6 +1,10 @@
 # vue-window-resize
 
+## Description
+A very simple vue component to have a window width and height reactive values on window resize. 
+
 ## Install and basic usage:
+
 ```sh
 npm install --save vue-window-resize@latest
 ```
@@ -44,7 +48,7 @@ export default {
 }
 ```
 
-### Register the component globally
+### Register via **\<script>** tag 
 ```js
 <script src="https://unpkg.com/vue-window-resize@1.0.4/dist/vue-window-resize.umd.min.js"></script>
 
